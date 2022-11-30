@@ -1,0 +1,120 @@
+/* Variáveis CSS */
+
+:root {
+  /* Cores */
+  --text-color-1: #72A0D6;
+  --text-color-2: #EB5C7C;
+  --text-color-3: #FFD11D;
+  --text-color-4: #dc3434;
+  --text-color-5: rgb(222, 255, 255);
+
+  --bg-color-1: rgb(78, 78, 78);
+  --bg-color-2: rgb(44, 44, 44);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color-1); 
+  z-index: 10;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background-color: var(--bg-color-2);
+  padding: 0.7em 0.9em;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-nav {
+  flex-direction: row;
+  justify-content: end;
+}
+
+.navbar-nav li {
+  margin-right: 2em;
+}
+
+.navbar-brand {
+  color: var(--text-color-1);
+  font-weight: bold;
+  transition: .3s;
+}
+
+.navbar-brand:hover {
+  color: #8aaed8;
+  font-weight: bold;
+} 
+
+.navbar-item a {
+  text-decoration: none;
+  color: var(--text-color-2); 
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: .5s;
+}
+
+.navbar-item a:hover {
+  color: var(--text-color-4);
+}
+
+
+/* Main Content */
+
+.band-title {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-color-3);
+}
+
+.main-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.band-description {
+  text-align: justify;
+  color: var(--text-color-5);
+}
+
+.gallery-img {
+  height: 250px;
+  margin: 0 auto;
+}
+
+.social-media-container {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.social-media-container i {
+  font-size: 1.3em;
+  margin-right: 0.5em;
+  color: var(--text-color-3);
+  transition: .2s;
+}
+
+.social-media-container i:hover {
+  color: var(--text-color-1);
+}
+
+footer {
+  padding: 1em;
+  font-size: medium;
+  font-weight: bold;
+  background-color: var(--bg-color-2);
+  color: var(--text-color-1);
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
+}
